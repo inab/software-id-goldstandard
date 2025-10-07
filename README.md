@@ -1,6 +1,6 @@
-# Software Identity Resolution Benchmark – Gold Standard
+# Software Id Resolution benchmark – Gold Standard
 
-This repository contains the **gold-standard annotations** used to evaluate software metadata identity resolution in life sciences.
+This repository contains the gold-standard annotations used to evaluate software metadata identity resolution in life sciences.
 
 ## Contents
 
