@@ -28,10 +28,10 @@ The canonical Excel file (`data/annotations.xlsx`) can be converted into a machi
     ```
 3.	Output
 The resulting file will contain one JSON object per line, with:
-	•	Column names normalized to snake_case.
-	•	Empty cells converted to null.
-	•	Date/time fields formatted as ISO-8601 strings.
-4. Validate the generated file
+   - Column names normalized to snake_case.
+   - Empty cells converted to null.
+   - Date/time fields formatted as ISO-8601 strings.
+1. Validate the generated file
 To confirm that the conversion completed successfully and that the resulting JSONL file conforms to the expected structure, validate it against the provided schema:
     ```py
     pip install jsonschema
