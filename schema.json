@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Software Identity Resolution Gold Standard",
+  "description": "JSON Schema for the gold-standard annotations used in the Software Identity Resolution Benchmark.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "entry_id": {
+      "type": "string",
+      "description": "Pair identifier used in the benchmark."
+    },
+    "human_decision": {
+      "type": "string",
+      "enum": [
+        "same",
+        "different",
+        "unclear"
+      ],
+      "description": "Final adjudicated identity decision for the pair."
+    },
+    "human_confidence": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "nullable": true,
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        null
+      ],
+      "description": "Confidence category for the decision."
+    },
+    "human_rationale": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "nullable": true,
+      "description": "Short free-text justification for the decision."
+    },
+    "hard": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "nullable": true,
+      "description": "Whether the decision was hard to make (boolean literal)."
+    }
+  },
+  "patternProperties": {
+    "^entry_(1|2)_id$": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "nullable": true,
+      "description": "Identifier string for entry i."
+    },
+    "^entry_(1|2)_source$": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "nullable": true,
+      "enum": [
+        "galaxy",
+        "biotools",
+        "toolshed",
+        "sourceforge",
+        "bioconda_recipes",
+        "bioconductor",
+        "github",
+        null
+      ],
+      "description": "Originating source/registry of entry i."
+    },
+    "^entry_(1|2)_name$": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "nullable": true,
+      "description": "Software/package name as given by the source for entry i."
+    },
+    "^entry_(1|2)_type$": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "nullable": true,
+      "enum": [
+        "db",
+        "cmd",
+        "lib",
+        "web",
+        "soap",
+        "suite",
+        "app",
+        "undefined",
+        "workbench",
+        null
+      ],
+      "description": "Software type for entry i."
+    },
+    "^entry_(1|2)_description$": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "nullable": true,
+      "description": "Free-text description/summary for entry i (may be multiline)."
+    },
+    "^entry_(1|2)_repository$": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "nullable": true,
+      "description": "Repository or registry URL for entry i."
+    },
+    "^entry_(1|2)_webpage$": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "nullable": true,
+      "description": "Project webpage URL for entry i."
+    },
+    "^entry_(1|2)_authors$": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "nullable": true,
+      "description": "Maintainer/author/owner information for entry i (e.g., \"Name\" <email>)."
+    },
+    "^entry_(1|2)_publication$": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "nullable": true,
+      "description": "Publication reference associated with entry i (free text or identifier)."
+    },
+    "^entry_(1|2)_license$": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "nullable": true,
+      "description": "Software license for entry i (name or SPDX where available)."
+    }
+  },
+  "required": [
+    "entry_id",
+    "human_decision"
+  ]
+}
