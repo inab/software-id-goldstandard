@@ -9,3 +9,16 @@ version: 1.0.0
 doi: 10.5281/zenodo.17292865
 license: CC-BY-4.0
 repository-code: "https://github.com/inab/software-id-goldstandard"
+preferred-citation:
+  type: dataset
+  title: "Annotated Software Identity Benchmark Dataset"
+  authors:
+    - family-names: "Martín del Pico"
+      given-names: "Eva"
+  version: "1.0.1"
+  date-released: "2025-10-08"
+  repository-artifact: "https://github.com/inab/software-id-goldstandard"
+  license: "CC-BY-4.0"
+  description: >
+    A manually annotated dataset of 100 ambiguous software metadata cases,
+    used for benchmarking large language models in software identity resolution.
