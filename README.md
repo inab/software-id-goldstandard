@@ -13,6 +13,7 @@ schema.json                # JSON Schema for each JSONL record
 codebook.md                # Human-readable description of the dataset 
 convert_xlsx_to_jsonl.py   # Reproducible converter from XLSX → JSONL
 validate.py.               # little script to validate JSONL records
+annotation_rationale.md    # decision criteria used during the annotation
 ```
 
 ## Generating the JSONL dataset
