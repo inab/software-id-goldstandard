@@ -5,7 +5,7 @@ authors:
   - family-names: "Martín del Pico"
     given-names: "Eva"
 date-released: 2025-10-07
-version: 1.0.0
+version: 1.0.1
 doi: 10.5281/zenodo.17292865
 license: CC-BY-4.0
 repository-code: "https://github.com/inab/software-id-goldstandard"
