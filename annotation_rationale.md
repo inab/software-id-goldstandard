@@ -22,10 +22,10 @@ The goal of this document is to allow future users of the data to understand how
 **Description**:
 The repositories have distinct goals, codebases, or branding.
 
-**Indicators**:
-	•	Different names and purposes.
-	•	No shared contributors or versioning.
-	•	Separate user communities.
+**Indicators**: 
+- Different names and purposes.
+- No shared contributors or versioning.
+- Separate user communities.
 
 **Decision**: different
 
@@ -35,11 +35,11 @@ The repositories have distinct goals, codebases, or branding.
 **Description**:
 The forked repository is a clear continuation of the original project.
 
-**Indicators**:
-	•	The fork starts where the original left off (e.g. original ends at v3.13, fork continues with v3.14+).
-	•	Maintainers overlap significantly.
-	•	Commit messages or README indicate continuity.
-	•	No rebranding or major repurposing.
+**Indicators**: 
+- The fork starts where the original left off (e.g. original ends at v3.13, fork continues with v3.14+).
+- Maintainers overlap significantly.
+- Commit messages or README indicate continuity.
+- No rebranding or major repurposing.
 
 **Decision**: `same`
 
@@ -49,9 +49,9 @@ The forked repository is a clear continuation of the original project.
 **Description:**
 One repo is inspired by or based on the other, but it represents a different project due to divergence in goal, name, or development team.
 
-**Indicators:**
-	•	The fork becomes a new project (e.g. rebranded, new scope).
-	•	Clear divergence in features or ideology.
+**Indicators:** 
+- The fork becomes a new project (e.g. rebranded, new scope).
+- Clear divergence in features or ideology.
 
 **Decision:** `different`
 
@@ -76,11 +76,11 @@ A new software is developed **from scratch** (not a fork), implementing similar 
 **Description**:
 The fork has commits but does not clearly indicate if it’s a continuation, an experiment, or diverging.
 
-**Indicators**:
-	•	No releases/tags in the fork.
-	•	Minimal or no documentation.
-	•	Unknown contributor relationship.
-	•	No rebranding or changes in purpose, but no continuity signal either.
+**Indicators**: 
+- No releases/tags in the fork.
+- Minimal or no documentation.
+- Unknown contributor relationship.
+- No rebranding or changes in purpose, but no continuity signal either.
 
 **Decision**: `unclear`
 
